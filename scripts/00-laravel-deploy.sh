@@ -6,8 +6,6 @@ composer global require hirak/prestissimo
 COMPOSER_MEMORY_LIMIT=-1 composer install --no-dev --working-dir=/var/www/html
 
 sed -i 's/memory_limit = .*/memory_limit = 512M/' /etc/php/7.4/fpm/php.ini
-service php7.4-fpm restart
-
 
 echo "Skip generating application key..."
 # php artisan key:generate --show
