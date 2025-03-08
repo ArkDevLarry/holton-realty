@@ -4,7 +4,7 @@ FROM richarvey/nginx-php-fpm:latest
 COPY . .
 
 # Increase PHP memory limit
-RUN echo "memory_limit=256M" > /usr/local/etc/php/conf.d/memory-limit.ini
+RUN echo "memory_limit=-1" > /usr/local/etc/php/conf.d/memory-limit.ini
 
 # Image config
 ENV SKIP_COMPOSER 1

@@ -1,12 +1,16 @@
 #!/usr/bin/env bash
-echo "Running composer"
-composer global require hirak/prestissimo
+echo "Adding swap memory..."
+fallocate -l 1G /swapfile
+chmod 600 /swapfile
+mkswap /swapfile
+swapon /swapfile
 
-# Increase memory limit for composer
+echo "Running composer"
 COMPOSER_MEMORY_LIMIT=-1 composer install --no-dev --working-dir=/var/www/html
 
-echo "Skip generating application key..."
-# php artisan key:generate --show
+
+php artisan config:clear
+php artisan cache:clear
 
 echo "Caching config..."
 php artisan config:cache
@@ -17,4 +21,4 @@ php artisan route:cache
 echo "Running migrations..."
 php artisan migrate --force
 
-php -i
+service php-fpm restart
