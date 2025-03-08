@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="{{ asset('assets/css/styles.css') }}">
     <link href=" https://cdn.jsdelivr.net/npm/sweetalert2@11.15.10/dist/sweetalert2.min.css " rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+    <link rel="shortcut icon" href="{{ asset('assets/img/favicon.ico') }}" type="image/x-icon">
     <style>
         body.wait, body.wait *{
             cursor: wait !important;   

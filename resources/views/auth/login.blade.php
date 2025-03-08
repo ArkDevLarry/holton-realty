@@ -1,7 +1,7 @@
 <x-guest-layout>
     <div class="splash-container">
         <div class="card ">
-            <div class="card-header text-center"><img class="logo-img m-auto" src="{{ asset('assets/images/logo.png') }}" alt="logo"><span class="splash-description">Enter login credentials.</span></div>
+            <div class="card-header text-center"><img class="logo-img m-auto" src="{{ asset('assets/img/logo.png') }}" alt="logo"><span class="splash-description">Enter login credentials.</span></div>
             <div class="card-body">
                 <form method="POST" action="{{ route('login') }}">
                     @csrf
