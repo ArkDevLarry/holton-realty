@@ -1,0 +1,127 @@
+.upload__box {
+    padding: 40px;
+}
+.upload__inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+.upload__btn {
+    color: #fff;
+    display: flex;
+    width: 135px;
+    height: 40px;
+}
+.upload__btn:hover {
+    opacity: .5;
+    color: #4045ba;
+    transition: all 0.3s ease;
+}
+.upload__btn-box {
+    margin-bottom: 10px;
+}
+.upload__img-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+}
+.upload__img-box {
+    width: 135px;
+    padding: 0 10px;
+    margin-bottom: 12px;
+    height: 120px;
+}
+.img-bg {
+    height: 100px;
+    /* width: 100%; */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.wid-it{
+    min-height:200px !important;
+    max-height:350px !important;
+    /* -ms-overflow-style: none !important; */
+    scrollbar-width: 5px !important;
+    scrollbar-color: #FF0000 !important;
+}
+
+.wid-it::-webkit-scrollbar {
+    width: 5px !important;
+    background: transparent !important;
+}
+.wid-it::-webkit-scrollbar-thumb {
+    background: #FF0000;
+    border-radius: 100%;
+}
+
+
+.preload {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+}
+
+.img_pre_wrap {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+}
+
+.img_now_wrap {
+    width: 32%;
+    padding: 0 10px;
+    margin-bottom: 12px;
+    height: 120px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.img_now_wrap:hover > .ctas {
+    opacity: 1;
+}
+
+.img_gan_bg {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#clairvoyance {
+    display: none;
+}
+
+.price-input, .plan-input {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.price-input > .removeIt, .plan-input > .removeIt {
+    cursor: pointer;
+}
+
+.filter-multi-select > .viewbar > .selected-items > .item {
+    background-color: black !important;
+}
+
+.filter-multi-select > .dropdown-toggle::before {
+    display: inline !important;
+}
