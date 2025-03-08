@@ -21,6 +21,6 @@ php artisan route:cache
 echo "Running migrations..."
 php artisan migrate --force
 
-service php-fpm restart
+kill -USR2 1
 
 php -i
