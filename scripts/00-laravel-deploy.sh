@@ -22,3 +22,5 @@ echo "Running migrations..."
 php artisan migrate --force
 
 service php-fpm restart
+
+php -i
